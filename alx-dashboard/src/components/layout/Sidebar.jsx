@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { to: '/forms', label: 'Formularze',   icon: '⌨️' },
   { to: '/regforms', label: 'Rejestracja',   icon: '⌨️' },
   { to: '/settings',  label: 'Ustawienia',  icon: '⚙️'  },
+  { to: '/country', label: 'Kraj',   icon: '🌍' }
 ];
 
 function Sidebar() {
