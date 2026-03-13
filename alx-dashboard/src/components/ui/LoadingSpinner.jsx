@@ -1,0 +1,17 @@
+import "./LoadingSpinner.css";
+
+function LoadingSpinner({ size = 36, color = "#6366f1" }) {
+  return (
+    <div
+      className="loading-spinner"
+      style={{
+        width: size,
+        height: size,
+        border: `3px solid #e2e8f0`,
+        borderTopColor: color,
+        borderRadius: "50%",
+      }}
+    />
+  );
+}
+export default LoadingSpinner
