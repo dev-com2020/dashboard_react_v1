@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { to: '/',          label: 'Przeglad',    icon: '📊' },
   { to: '/products',  label: 'Produkty',    icon: '📦' },
   { to: '/analytics', label: 'Analityka',   icon: '📈' },
+  { to: '/forms', label: 'Formularze',   icon: '⌨️' },
   { to: '/settings',  label: 'Ustawienia',  icon: '⚙️'  },
 ];
 
