@@ -43,7 +43,11 @@ return (
       <table className='data-table'>
         <thead>
             <tr>
-
+            {['name','category','price','stock','sold'].map(col => (
+              <th key={col} onClick={() => handleSort(col)}>
+                {col} {sortBy === col ? (sortDir === 'asc' ? '🔼' : '🔽') : ''}
+              </th>
+            ))}
             </tr>
         </thead>
         <tbody>

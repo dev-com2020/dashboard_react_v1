@@ -7,6 +7,7 @@ import LoadingSpinner from './components/ui/LoadingSpinner';
 
 
 const Overview = lazy(() => import('./pages/Overview'));
+const Products = lazy(() => import('./pages/Products'));
 
 function App() {
   const {darkMode} = useDarkMode();
@@ -20,6 +21,7 @@ function App() {
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
             <Route path='/' element={<Overview />} />
+            <Route path='/products' element={<Products />} />
           </Routes>
         </Suspense>
       </main>
