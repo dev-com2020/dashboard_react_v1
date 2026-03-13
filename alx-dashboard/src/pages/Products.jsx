@@ -51,9 +51,15 @@ return (
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td></td>
+          {products.map(p => (
+            <tr key={p.id}>
+                <td>{p.name}</td>
+                <td><span className='badge-cat'>{p.category}</span></td>
+                <td>{p.price.toLocaleString()} PLN</td>
+                <td>{p.stock}</td>
+                <td>{p.sold}</td>
             </tr>
+          ))}
         </tbody>
       </table>
       </div>
