@@ -11,6 +11,7 @@ const Products = lazy(() => import('./pages/Products'));
 const Analytics = lazy(() => import('./pages/Analytics'));
 const Settings = lazy(() => import('./pages/Settings'));
 const Forms = lazy(() => import('./pages/Forms'));
+const RegisterForm = lazy(() => import('./pages/RegisterForm'));
 
 function App() {
   const {darkMode} = useDarkMode();
@@ -28,6 +29,7 @@ function App() {
             <Route path='/analytics' element={<Analytics />} />
             <Route path='/settings' element={<Settings />} />
             <Route path='/forms' element={<Forms />} />
+            <Route path='/regforms' element={<RegisterForm />} />
           </Routes>
         </Suspense>
       </main>
