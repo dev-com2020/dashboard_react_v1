@@ -410,3 +410,73 @@ button, input, select { font-family: inherit; font-size: inherit; }
 @media (max-width: 480px) {
   .kpi-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ── SETTINGS PAGE ──────────────────────────────────────────── */
+
+.settings-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.setting-row:last-child { border-bottom: none; }
+
+.setting-row h3 { font-size: .9375rem; color: var(--text); margin-bottom: .125rem; }
+.setting-row p  { font-size: .8125rem; color: var(--text-muted); margin: 0; }
+
+/* Toggle switch */
+.toggle {
+  position: relative;
+  width: 48px;
+  height: 26px;
+  border-radius: 99px;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background var(--transition);
+  padding: 0;
+}
+
+.toggle.off { background: var(--border); }
+.toggle.on  { background: var(--accent); }
+
+.toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform var(--transition);
+  display: block;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.toggle.on .toggle-knob { transform: translateX(22px); }
+
+/* code badge */
+.code-badge {
+  font-family: var(--font-mono, monospace);
+  font-size: .8125rem;
+  background: var(--surface-2);
+  color: var(--accent);
+  padding: .25rem .625rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+  flex-shrink: 0;
+}

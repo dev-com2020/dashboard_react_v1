@@ -9,6 +9,7 @@ import LoadingSpinner from './components/ui/LoadingSpinner';
 const Overview = lazy(() => import('./pages/Overview'));
 const Products = lazy(() => import('./pages/Products'));
 const Analytics = lazy(() => import('./pages/Analytics'));
+const Settings = lazy(() => import('./pages/Settings'));
 
 function App() {
   const {darkMode} = useDarkMode();
@@ -24,6 +25,7 @@ function App() {
             <Route path='/' element={<Overview />} />
             <Route path='/products' element={<Products />} />
             <Route path='/analytics' element={<Analytics />} />
+            <Route path='/settings' element={<Settings />} />
           </Routes>
         </Suspense>
       </main>
